@@ -59,7 +59,7 @@
                         ResultSet rs;
 
                         Class.forName("com.mysql.jdbc.Driver");
-                        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/?user=root/hossam", "root", "Password");
+                        con = DriverManager.getConnection("jdbc:mysql://localhost:3306/records", "root", "Password");
                         String id = request.getParameter("id");
                         pst = con.prepareStatement("select * from records where id = ?");
                         pst.setString(1, id);
