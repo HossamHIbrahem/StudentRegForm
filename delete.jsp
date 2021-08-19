@@ -6,7 +6,7 @@
     PreparedStatement pst;
     ResultSet rs;
     Class.forName("com.mysql.jdbc.Driver");
-    con = DriverManager.getConnection("jdbc:mysql://localhost/hossam", "root", "");
+    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/records", "root", "");
     pst = con.prepareStatement("Delete records ");
     pst.setString(0, id);
     pst.executeUpdate();
