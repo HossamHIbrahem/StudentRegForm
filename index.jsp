@@ -25,7 +25,7 @@
         pst.setString(4, Email);
         pst.setString(5, Address);
 
-        // pst.executeUpdate();
+        pst.executeUpdate();
 %>  
 
 <script>
